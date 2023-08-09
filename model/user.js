@@ -4,14 +4,28 @@ const userSchema = new mongoose.Schema({
     name:{
         type:String
     },
-    age:{
-        type:Number
+    email:{
+        type:String
     },
-    mobile:{
-        type:Number
+    password:{
+        type:String
     },
     DOB:{
         type:String
+    },
+    DOJ:{
+        type:String
+    },
+    Department:{
+        type:String
+    },
+    isRead: {
+        type: Boolean,
+        default:false
+    },
+    admin: {
+        type: Boolean,
+        default:false
     }
 });
 
